@@ -8,10 +8,10 @@ tso.set_include_entities(False) # probably JSON stuff
 
     #My personal API access tokens
 ts = TwitterSearch(
-        consumer_key = 'J6QlDpfMCWuX4zgyfnvt8RUy5',
-        consumer_secret = 'cWTHpaRHa1mHPMXnwL6I60DVAzfjmAti2l1fZtwYLYjrSnkuyZ',
-        access_token = '159238058-6Vzd3ZJlrul5kusfYPALJcfz1GDypSh5edLvhyPZ',
-        access_token_secret = 'GZhcOeZYgT3zHJObkwtWy3JKkEOVgAVrP2N8Md2syBPoc'
+        consumer_key = '',
+        consumer_secret = '',
+        access_token = '',
+        access_token_secret = ''
      )
 
 for tweet in ts.search_tweets_iterable(tso):
