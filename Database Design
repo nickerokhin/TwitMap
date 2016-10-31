@@ -37,7 +37,7 @@ Relations - The purpose of relations would be to reuse tweets from previous requ
  strict: false}
 
  returns tweets matching either keyword or both. The tweets would then be stored with their relevant keywords.
- if strict were turned on, then every returned tweet would contain be stored with "oil", "energy", "crude". Someone else
+ if strict were turned on, then every returned tweet would contain and be stored with "oil", "energy", "crude". Someone else
  searching for "oil" will be given data from past tweets tagged just "oil" from past searches.
 
 Screenshot of example documents: http://imgur.com/a/itEF1
