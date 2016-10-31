@@ -1,0 +1,43 @@
+Database Design:
+
+Database: MongoDB
+Database Type: NoSQL Key-Value
+
+Mongo utilizes JSON to store data in a key-value format.
+We will be using pymongo to interact with the database
+Data will be stored automatically through POST requests to our web app
+
+We will have one database with two collections
+
+Tweets: Used to store useful information about tweets.
+
+_id - ID of tweet
+text - Text of the tweet
+coords - Most relevant coordinates
+screenName - username
+date - Date tweet posted (WEEKDAY MONTH DAY HH:MM:SS +0000 YEAR)
+request_id - request ID with which this tweet was retrieved
+keywords - keywords in request relevant to tweet
+hashtags - hashtags in request relevant to tweet
+
+Requests: Used to store requests made on web app
+
+keywords - array of keywords
+hashtag - requested hashtag
+users - requested user
+date - date of request
+strict - boolean, returns only tweets matching all specified keywords and hashtags
+
+Relations - The purpose of relations would be to reuse tweets from previous requests. For example a request 
+
+{keywords: ["oil", "energy", "crude"],
+ hashtag: "",
+ users: ""
+ date: 10-31-2016 13:04:52
+ strict: false}
+
+ returns tweets matching either keyword or both. The tweets would then be stored with their relevant keywords.
+ if strict were turned on, then every returned tweet would contain be stored with "oil", "energy", "crude".
+
+
+
