@@ -11,7 +11,7 @@ We will have one database with two collections
 
 Tweets: Used to store useful information about tweets.
 
-_id - ID of tweet
+_id - ID of tweet entry
 text - Text of the tweet
 coords - Most relevant coordinates
 screenName - username
@@ -37,7 +37,9 @@ Relations - The purpose of relations would be to reuse tweets from previous requ
  strict: false}
 
  returns tweets matching either keyword or both. The tweets would then be stored with their relevant keywords.
- if strict were turned on, then every returned tweet would contain be stored with "oil", "energy", "crude".
+ if strict were turned on, then every returned tweet would contain be stored with "oil", "energy", "crude". Someone else
+ searching for "oil" will be given data from past tweets tagged just "oil" from past searches.
 
+Screenshot of some example documents: http://imgur.com/a/itEF1
 
 
