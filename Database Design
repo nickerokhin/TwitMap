@@ -5,7 +5,7 @@ Database Type: NoSQL Key-Value
 
 Mongo utilizes JSON to store data in a key-value format.
 We will be using pymongo to interact with the database
-Data will be stored automatically through POST requests to our web app
+Data will be stored automatically through node.js
 
 We will have one database with two collections
 
