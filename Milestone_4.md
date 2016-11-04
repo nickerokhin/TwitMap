@@ -1,5 +1,5 @@
 ## Target Market:
-See infographic in repository.
+.
 
 ## Competitor Profiles:
 Tweepsmap: Has user login functionality through twitter to show twitter users where their followers are located on a map. Is unique 
