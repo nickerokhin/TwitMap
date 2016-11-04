@@ -20,7 +20,7 @@ By combining the key features that make our competitors unique, we can create a 
 ## Infographic: see repository
 
 ## Results from first Iteration:
-Our first iteration was a simple itertion of what we want to accomplish. We created a Python script that used the Twitter Search API to create a database of tweets, and could perform a query on the database given keywords. The use of the Twitter Search API was successful, however we plan to query usign the Twitter Stream API as well. For the next iteration, we plan to have the user interface created as well as the display of the quesry results on a map.
+Our first iteration was a simple itertion of what we wanted to accomplish. We created a Python script that used the Twitter Search API to create a database of tweets, and could perform a query on the database given keywords. The use of the Twitter Search API was successful, however we plan to query usign the Twitter Stream API as well. For the next iteration, we plan to have the user interface created as well as the display of the quesry results on a map.
 
 ## Additional Requirements:
 
