@@ -16,7 +16,7 @@ One Million Tweet Map (O.M.T.M.): A clustering engine that shows where most twee
     ahead of O.M.T.M. is the user profile data, ability to have multiple searches, and ability to view the most popular topics. 
 
 ## Competitive Advantage:
-By combining the key features that make our competitors unique, we can create a web app that provides more information and user capability than each individual competitor. 
+By combining the key features that make our competitors unique, we can create a web app that provides more information and user capability than each individual competitor. See infographic for the table containing unique qualities each competitor and Twitmap possess.
 ## Infographic: see repository
 
 ## Results from first Iteration:
