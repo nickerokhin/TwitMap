@@ -1,19 +1,19 @@
-# Target Market:
+## Target Market:
 See infographic in repository.
 
-# Competitor Profiles:
+## Competitor Profiles:
 
-# Competitive Advantage:
+## Competitive Advantage:
 
-# Infographic: see repository
+## Infographic: see repository
 
-# Results from first Iteration:
+## Results from first Iteration:
 
-# Additional Requirements:
+## Additional Requirements:
 
 Screenshots of the additional requirements: https://imgur.com/a/8xWIH
 
-# Plan Two Week Agile Cycle:
+## Plan Two Week Agile Cycle:
 
 Screenshot of overview: http://imgur.com/a/eqYr4
 
