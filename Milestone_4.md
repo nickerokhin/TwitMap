@@ -1,5 +1,5 @@
 ## Target Market:
-The target market for Twitmap would be businesses looking to collect and represent twitter data for public use, and also collect data on the users of the Twitmap service. Definitely the largest segment of this market would be buisnesses interested in using targeted advertising based on trends in different areas, considering that 80% of businesses in the U.S. use twitter for advertising. Another portion of this market could be other buinesses that would use the twitter data for their own personal needs such as campaigning, examining disease spread, or looking at best touring locations. Overall, the market is definitely growing as more and more people join twitter and also as more companies use the public data released by twitter. Potential customers could be advertising companies, tour managers, or any business that is modeled around social trends.
+The target market for Twitmap would be businesses looking to collect and represent twitter data for public use, and also collect data on the users of the Twitmap service. Definitely the largest segment of this market would be buisnesses interested in using targeted advertising based on trends in different areas, considering that 80% of businesses in the U.S. use Twitter for advertising. Another portion of this market could be other buinesses that would use the twitter data for their own personal needs such as campaigning, examining disease spread, or looking at best touring locations. Overall, the market is definitely growing as more and more people join twitter and also as more companies use the public data released by twitter. Potential customers could be advertising companies, tour managers, or any business that is modeled around social trends.
 
 ## Competitor Profiles:
 Tweepsmap: Has user login functionality through twitter to show twitter users where their followers are located on a map. Is unique 
@@ -17,7 +17,8 @@ One Million Tweet Map (O.M.T.M.): A clustering engine that shows where most twee
 
 ## Competitive Advantage:
 By combining the key features that make our competitors unique, we can create a web app that provides more information and user capability than each individual competitor.  See infographic for the table containing unique qualities each competitor and Twitmap possess.
-## Infographic: see repository
+## Infographic:
+URL to infograph: https://infograph.venngage.com/p/171199/twitmap2
 
 ## Results from first Iteration:
 Our first iteration was a simple itertion of what we wanted to accomplish. We created a Python script that used the Twitter Search API to create a database of tweets, and could perform a query on the database given keywords. The use of the Twitter Search API was successful, however we plan to query usign the Twitter Stream API as well. For the next iteration, we plan to have the user interface created as well as the display of the quesry results on a map.
