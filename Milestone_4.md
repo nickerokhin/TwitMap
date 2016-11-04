@@ -2,9 +2,21 @@
 See infographic in repository.
 
 ## Competitor Profiles:
+Tweepsmap: Has user login functionality through twitter to show twitter users where their followers are located on a map. Is unique 
+          from other competitors in the sense that it is the only one that allows users to see data about their followers.   
+          
+Trendsmap: Displays a map of the earth with the most common key words in tweets are displayed for different areas of the map. What 
+          makes Trendsmap unique is the ability to see which trends are most common in different areas across the entire earth. 
+          
+MapD: An extremely detailed map of current tweets in the world that shows differences in language, most popular hashtags, and the
+tweets per hour. Also alows for hashtag searching, keyword searching, zoom in capability, and ability to read tweets. MapD is  our strongest competitor due to the huge amount of data that it displays. Where MapD lacks however is with being able to save
+individual data for users, the ability to cross compare different searches (all searches are the same on the map), and showing a realtime feed of the tweets.
+          
+One Million Tweet Map (O.M.T.M.): A clustering engine that shows where most tweets are being tweeted and alows to filter by hashtags     and keywords. The display can be changed to heat map view, and shows a real time feed of each tweet being tweeted. What sets Twitmap
+    ahead of O.M.T.M. is the user profile data, ability to have multiple searches, and ability to view the most popular topics. 
 
 ## Competitive Advantage:
-
+By combining the key features that make our competitors unique, we can create a web app that provides more information and user capability than each individual competitor. 
 ## Infographic: see repository
 
 ## Results from first Iteration:
