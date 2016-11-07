@@ -27,4 +27,4 @@ class listener(StreamListener):
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["trump"])
+twitterStream.filter(track=["trump", "clinton"]) #Presumably the most tweet volume around election time
