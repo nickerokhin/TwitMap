@@ -3,6 +3,9 @@ from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
 import json
 import pprint
+import urllib.request
+import urllib.parse
+
 
 consumer_key = "JrnWTAY3je7llr39xKIoM56mT"
 consumer_secret = "FVHWRrgSi5EuyrRFZZKwzScAP4mqLRatcZuxtcaLL4zq6cwVSZ"
@@ -11,15 +14,28 @@ access_secret = "13Qgxn9aTha8U7IF78F14Y1ZKDO6KneKKc40rsDGDnTrJ"
 
 class listener(StreamListener):
     def on_data(self,data):
+         coords = ""
          jd = json.loads(data)
          if('geo' in jd and 'coordinates' in jd and 'place' in jd):
              if(jd['geo'] != None):
-                 print(jd['text'],"Coords:",jd['geo']['coordinates'])
+                 coords = jd['geo']['coordinates']
              elif(jd['coordinates'] != None):
-                 print(jd['text'],"Coords:",jd['coordinates']['coordinates'])
+                 coords = jd['coordinates']['coordinates']
              elif(jd['place'] != None):
-                 print(jd['text'],"Coords:",jd['place']['bounding_box']['coordinates'][0][1])
-         return True
+                 coords = jd['place']['bounding_box']['coordinates'][0][1]
+             if coords != "":
+
+                 coordinates = coords
+                 text = jd['text']
+                 values = {'txt': text}
+                 parsed_values = urllib.parse.urlencode(values)
+                 bytes_data = parsed_values.encode('ascii')
+                 sentiment = urllib.request.urlopen("http://sentiment.vivekn.com/api/text/", bytes_data)
+                 json_sentiment = json.loads(sentiment.read().decode('utf-8'))
+                 confidence = json_sentiment["result"]["confidence"]
+                 sent = json_sentiment["result"]["sentiment"]
+                 print(text, "\n", "Coords:", coordinates, "\n", "Sentiment:", sent, "\n", "Confidence:", confidence, "\n")
+                 return True
 
     def on_error(self, status):
         print(status)
@@ -27,4 +43,4 @@ class listener(StreamListener):
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["@realDonaldTrump"])
+twitterStream.filter(track=["trump"])
