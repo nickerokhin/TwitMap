@@ -10,7 +10,7 @@ Stand-up: https://www.youtube.com/watch?v=oPH9igKAHVs
 Retrospective: https://www.youtube.com/watch?v=QhtMHoFrE3w
    Summary:
       The retrospective on our last sprint cycle iteration reported our progress thus far, identifying which things worked well and which
-      did not. Overall, in the last two weeks, a lot of progress was made toward a completed producted. Some goals that were set and completed
+      did not. Overall, in the last two weeks, a lot of progress was made toward a completed product. Some goals that were set and completed
       include creating a working stream parser, a functional database, making it run on a webserver, and making it plot to the maps api.
       This was a huge amount of progress considering that a fundamental component of our project is to collect, store, and display data from twitter.
       Although more testing will need to be done, with this component in place, we can begin adding more features and work toward improving our project 
