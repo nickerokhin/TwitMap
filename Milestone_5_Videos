@@ -8,3 +8,13 @@ Stand-up: https://www.youtube.com/watch?v=oPH9igKAHVs
       to save on storage and time. New features such as adding specific sports searches are brought up as well. 
 
 Retrospective: https://www.youtube.com/watch?v=QhtMHoFrE3w
+   Summary:
+      The retrospective on our last sprint cycle iteration reported our progress thus far, identifying which things worked well and which
+      did not. Overall, in the last two weeks, a lot of progress was made toward a completed producted. Some goals that were set and completed
+      include creating a working stream parser, a functional database, making it run on a webserver, and making it plot to the maps api.
+      This was a huge amount of progress considering that a fundamental component of our project is to collect, store, and display data from twitter.
+      Although more testing will need to be done, with this component in place, we can begin adding more features and work toward improving our project 
+      Some goals that were not met include adding the filter by location and filter by date/time features. These may have been unreasonable expectations to 
+      complete in the two week time in addition to creating a working stream parser. We intend to add the filter by location feature in the next
+      cycle, but as previously discussed in the stand-up meeting, we will not be including the date/time filtering due to limited storage. Overall,
+      the next steps that we will face include making the website look good, adding features, making map
