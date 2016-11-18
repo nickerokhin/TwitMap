@@ -6,10 +6,10 @@ import urllib.request
 import urllib.parse
 
 track = ["trump"]
-consumer_key = "JrnWTAY3je7llr39xKIoM56mT"
-consumer_secret = "FVHWRrgSi5EuyrRFZZKwzScAP4mqLRatcZuxtcaLL4zq6cwVSZ"
-access_key = "159238058-FGetuUbim8pIc7NAfvHNxxlqyhADpaUIyLUrT5Aj"
-access_secret = "13Qgxn9aTha8U7IF78F14Y1ZKDO6KneKKc40rsDGDnTrJ"
+consumer_key = ""
+consumer_secret = ""
+access_key = ""
+access_secret = ""
 sentiment_load = 0
 sentiment_index = 0
 
