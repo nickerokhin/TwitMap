@@ -17,4 +17,4 @@ Retrospective: https://www.youtube.com/watch?v=QhtMHoFrE3w
       Some goals that were not met include adding the filter by location and filter by date/time features. These may have been unreasonable expectations to 
       complete in the two week time in addition to creating a working stream parser. We intend to add the filter by location feature in the next
       cycle, but as previously discussed in the stand-up meeting, we will not be including the date/time filtering due to limited storage. Overall,
-      the next steps that we will face include making the website look good, adding features, making map
+      the next steps that we will face will be to continue to work out bugs and add other key features.
