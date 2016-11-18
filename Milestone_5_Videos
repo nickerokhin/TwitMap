@@ -2,6 +2,9 @@
 Stand-up: https://www.youtube.com/watch?v=oPH9igKAHVs
    Summary:
       In the standup meeting, we briefly connected on our current progress for each of our sections of the project by indivually answering
-      3 questions: "What did I accomplish today?", "What will I do today?", and "What obstacles are impeding my progress?". As a finished         product comes closer into view, what remains for our project is working out bugs, testing, optimization, and adding or changing             features. Errors regarding the stream, database, and UI are discussed. We also talk about removing the date/time filtering in order         to save on storage and time. New features such as adding specific sports searches are brought up as well. 
+      3 questions: "What did I accomplish today?", "What will I do today?", and "What obstacles are impeding my progress?". As a finished         
+      product comes closer into view, what remains for our project is working out bugs, testing, optimization, and adding or changing   
+      features. Errors regarding the stream, database, and UI are discussed. We also talk about removing the date/time filtering in order  
+      to save on storage and time. New features such as adding specific sports searches are brought up as well. 
 
 Retrospective: https://www.youtube.com/watch?v=QhtMHoFrE3w
