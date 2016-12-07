@@ -25,11 +25,18 @@ access_token_secret: "13Qgxn9aTha8U7IF78F14Y1ZKDO6KneKKc40rsDGDnTrJ"
 }),
 stream = null;
 
+var counter = 0;
+var sentcount = 0;
+
 //setup stream parameters
 var streamParameters = {
   track:'trump'
 
 }
+
+var MongoClient = mongodb.MongoClient;
+var dbUrl = 'mongodb://localhost:27017/tweets';
+
 // 'locations':'-180,-90,180,90'
 
 
@@ -69,8 +76,12 @@ io.sockets.on('connection', function (socket) {
                 //console.log(data.text);
                 if(data.text != null){
                 var sent = sentiment(data.text);
-                console.log(sent);
-              }
+                tweet_sentiment = sent.score;
+                counter += 1;
+                sentcount += sent.score;
+                //console.log(sentcount/counter);
+
+
                 if (data.coordinates & data.coordinates !== null){
                   //If so then build up some nice json and send out to web sockets
                   var outputPoint = {"lat": data.coordinates.coordinates[0],"lng": data.coordinates.coordinates[1]};
@@ -89,6 +100,32 @@ io.sockets.on('connection', function (socket) {
                     socket.broadcast.emit("twitter-stream", outputPoint);
 
                   }
+                  if(outputPoint !== undefined){
+                    outputPoint = null;
+                  }
+                  if(data.text == null){
+                    var tweet = null;
+                  }
+                  else if(data.text != null){
+                    var tweet = data.text;
+                  }
+                  mongodb.connect(dbUrl, function(err,db){
+                    if(err){
+                      console.log(err)
+                    } else{
+                    var doc = {text : data.text, date : data.created_at, sent : sentiment, coordinates : outputPoint}
+
+                    db.collection('tweets').insertOne(doc, function(err, result){
+                      console.log(doc + "inserted");
+                      db.close();
+
+                      });
+                    }
+                    });
+
+                  }
+
+
 
               stream.on('limit', function(limitMessage) {
                 return console.log(limitMessage);
