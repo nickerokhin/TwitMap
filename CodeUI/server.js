@@ -113,7 +113,7 @@ io.sockets.on('connection', function (socket) {
                     if(err){
                       console.log(err)
                     } else{
-                    var doc = {text : data.text, date : data.created_at, sent : sentiment, coordinates : outputPoint}
+                    var doc = {text : data.text, date : data.created_at, sent : tweet_sentiment, coordinates : outputPoint}
 
                     db.collection('tweets').insertOne(doc, function(err, result){
                       console.log("Successfully inserted");
