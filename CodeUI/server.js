@@ -11,17 +11,17 @@ var twitter = require('twitter'),
 
 //Setup twitter stream api
 var twit = new twitter({
-/*
+
   consumer_key: 'HS49PXCEYBhic9XXXcz8Op6hO',
   consumer_secret: '7J5aCLRYqWnbr7XaZHzW6u5m8UySbazjzglUrrs3OKvhwXSnWF',
   access_token_key: '554861590-hH3BjAyFReQoWqrFvHYEkVtXDM2pFDJ0x8EzWlGt',
   access_token_secret: '5GOFEFMfHOoaXoIRjsFIN6ScWGQvN6XCPX35DvHQBYfEL'
-*/
+/*
 consumer_key: "0D9VrKYphFdxTetbb7kEiEsiL",
 consumer_secret: "Grymc6IpEkb8LZiDwUF4lei4mpQ7XzBJXtQoAGZDxn8751UryV",
 access_token_key: "159238058-FGetuUbim8pIc7NAfvHNxxlqyhADpaUIyLUrT5Aj",
 access_token_secret: "13Qgxn9aTha8U7IF78F14Y1ZKDO6KneKKc40rsDGDnTrJ"
-
+*/
 }),
 stream = null;
 
@@ -30,7 +30,7 @@ var sentcount = 0;
 
 //setup stream parameters
 var streamParameters = {
-  track:'trump'
+  track:'the'
 
 }
 
