@@ -6,7 +6,8 @@ var twitter = require('twitter'),
     http = require('http'),
     server = http.createServer(app),
     io = require('socket.io').listen(server);
-
+    mongodb = require('mongodb'),
+    sentiment = require('sentiment')
 
 //Setup twitter stream api
 var twit = new twitter({
@@ -47,13 +48,29 @@ io.sockets.on('connection', function (socket) {
       //Connect to twitter stream passing in filter for entire world.
       twit.stream('statuses/filter', streamParameters, function(stream) {
           stream.on('data', function(data) {
-
-                if(data.text & data.text !== null){
+/*
+                if(data.text){
                   socket.emit('sentiment-stream', data.text);
+                  var postData = {'txt': data.text};
+                  var url = 'http://sentiment.vivekn.com/api/text/';
+                  var options = {
+                    method: 'post',
+                    body: postData,
+                    json: true,
+                    url: url
+                  }
+
+                  request(options, function(err, res, body){
+                    console.log(res);
+                    console.log(body);
+                  })
                 }
-
-                console.log(data.text);
-
+*/
+                //console.log(data.text);
+                if(data.text != null){
+                var sent = sentiment(data.text);
+                console.log(sent);
+              }
                 if (data.coordinates & data.coordinates !== null){
                   //If so then build up some nice json and send out to web sockets
                   var outputPoint = {"lat": data.coordinates.coordinates[0],"lng": data.coordinates.coordinates[1]};
