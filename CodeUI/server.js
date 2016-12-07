@@ -116,7 +116,7 @@ io.sockets.on('connection', function (socket) {
                     var doc = {text : data.text, date : data.created_at, sent : sentiment, coordinates : outputPoint}
 
                     db.collection('tweets').insertOne(doc, function(err, result){
-                      console.log(doc + "inserted");
+                      console.log("Successfully inserted");
                       db.close();
 
                       });
