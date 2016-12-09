@@ -1,3 +1,9 @@
+function initTweets(){
+
+  var socket = io.connect('/');
+  socket.emit("pressed");
+}
+
 function initialize() {
   //Setup Google Map
   var myLatlng = new google.maps.LatLng(39,-98);
@@ -52,14 +58,12 @@ function initialize() {
     // Listens for a success response from the server to
     // say the connection was successful.
     socket.on("connected", function(r) {
-    //Now that we are connected to the server let's tell
-    //the server we are ready to start receiving tweets.
+
+    socket.on("pressed", function(r){
     socket.emit("start tweets");
     });
+    //Now that we are connected to the server let's tell
+    //the server we are ready to start receiving tweets.
+    });
   }
-}
-
-function initTweets(){
-
-
 }
