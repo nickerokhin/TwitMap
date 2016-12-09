@@ -15,6 +15,14 @@ function initialize() {
   };
   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
+  var gauge = new JustGage(document.getElementById("gauge"), {
+                    id: "gauge",
+                    value: 0,
+                    min: 0,
+                    max: 100,
+                    title: "Sentiment"
+                  });
+
   //Setup heat map and link to Twitter array we will append data to
   var heatmap;
   var liveTweets = new google.maps.MVCArray();
@@ -48,6 +56,11 @@ function initialize() {
       },600);
 
     });
+
+    socket.on('sent-stream', function (data) {
+      justGage({"gauge", data})
+
+    })
 
     // Listens for a success response from the server to
     // say the connection was successful.

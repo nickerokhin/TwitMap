@@ -77,6 +77,10 @@ div#map_canvas{
   display: block;
   height: auto;
 }
+div#gauge{
+  display: block;
+  height: auto;
+}
 /*
 #tweets{
   position: absolute;

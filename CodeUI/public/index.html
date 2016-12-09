@@ -23,6 +23,11 @@
     <script src="/js/FMEServer.js" type="text/javascript"></script>
     <!-- Spatial Dashboard JavaScript -->
     <script src="/js/twitterStream.js" type="text/javascript"></script>
+
+    <!-- justgage plugin-->
+    <script src="libs/raphael.2.1.0.min.js"></script>
+    <script src="libs/justgage.1.0.1.min.js"></script>
+
     <style>
     body{
       background-color: #3c3c3c;
@@ -34,19 +39,25 @@
             </div>
 <body onLoad = "initialize()">
         <!--- twitter input-->
-        <div class="col-lg-3 col-lg-offset-1">
+        <div class="col-lg-3">
              <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
              <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
              <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
              <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Follow" class="form-control input-lg" required="">
              <button onclick = "initTweets()" class = "btn btn-info btn-md center-block">Stream!</button>
-             </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div id="map_canvas" style ="height:500px;"></div>
+            <script src="js/twitterStream.js"></script>'
+        </div>
+
+        <div class="col-lg-2">
+            <div id="gauge" class="200x160px"></div>
+            <script src="js/twitterStream.js"></script>
+        </div>
 
 
-         <div class="col-lg-7">
-         <div id="map_canvas" style ="height:500px;"></div>
-         <script src="js/twitterStream.js"></script>
-       </div>
      </body>
 
      </div>

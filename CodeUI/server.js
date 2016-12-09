@@ -85,9 +85,11 @@ io.sockets.on('connection', function (socket) {
                   var outputPoint = {"lat": data.coordinates.coordinates[0],"lng": data.coordinates.coordinates[1]};
 
                   socket.broadcast.emit("twitter-stream", outputPoint);
+                  scket.broadcast.emit("sent-stream", sentcount)
 
                   //Send out to web sockets channel.
                   socket.emit('twitter-stream', outputPoint);
+                  socket.emit('sent_stream', sentcount)
                 }
 
 
@@ -96,6 +98,7 @@ io.sockets.on('connection', function (socket) {
                   centerLng = data.place.bounding_box.coordinates[0][1][1];
                     var outputPoint = {"lat": centerLat,"lng": centerLng};
                     socket.broadcast.emit("twitter-stream", outputPoint);
+                    socket.emit('sent_stream', sentcount)
 
                   }
                   if(outputPoint !== undefined){
