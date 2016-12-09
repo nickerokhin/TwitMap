@@ -55,7 +55,11 @@ function initialize() {
 
       //Now that we are connected to the server let's tell
       //the server we are ready to start receiving tweets.
-      socket.emit("start tweets");
+
     });
   }
+}
+
+function initTweets(){
+  socket.emit("start tweets");
 }
