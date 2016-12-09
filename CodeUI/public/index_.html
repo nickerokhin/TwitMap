@@ -29,25 +29,21 @@
     }
     </style>
 </head>
-<div class="row text-center text-muted" id="title">
-                <img src="css/logo.png" style="width: 250px; height: 150px"/>
-            </div>
-<body onLoad = "initialize()">
+<body onload="initialize()">
         <!--- twitter input-->
-        <div class="col-lg-3 col-lg-offset-1">
-             <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
-             <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
-             <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Keyword" class="form-control input-lg" required="">
-             <input id="tag" name="tag" style = "height:50px;" type="text" placeholder="Follow" class="form-control input-lg" required="">
-             <button onclick = "initTweets()" class = "btn btn-info btn-md center-block">Stream!</button>
-             </div>
+        <div class="col-sm-12">
+        <h1>Twitmap</h1>
+        </div>
+            <div class="col-lg-3 col-lg-offset-1">
+            <input id="tag" name="tag" type="text" placeholder="Twitter Tag" class="form-control input-md" required="">
+            </div>
 
 
-         <div class="col-lg-7">
-         <div id="map_canvas" style ="height:500px;"></div>
-         <script src="js/twitterStream.js"></script>
-       </div>
-     </body>
+        <div class="col-lg-7">
+        <div id="map_canvas" style ="height:500px;"></div>
+        <script src="js/twitterStream.js"></script>
+      </div>
+    </body>
 
-     </div>
- </html>
+    </div>
+</html>

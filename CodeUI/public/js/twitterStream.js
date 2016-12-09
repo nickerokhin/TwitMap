@@ -52,14 +52,14 @@ function initialize() {
     // Listens for a success response from the server to
     // say the connection was successful.
     socket.on("connected", function(r) {
-
-      //Now that we are connected to the server let's tell
-      //the server we are ready to start receiving tweets.
-
+    //Now that we are connected to the server let's tell
+    //the server we are ready to start receiving tweets.
+    socket.emit("start tweets");
     });
   }
 }
 
 function initTweets(){
-  socket.emit("start tweets");
+
+
 }
