@@ -1,3 +1,7 @@
+//This file is not being used in our app, it was merely being used to test a few things in our app. 
+//Credit to https://github.com/wlngwang/real-time-tweets-sentiment-map
+
+
 var module = angular.module('app', []);
 
 module.factory('socket', function($rootScope){
