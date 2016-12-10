@@ -1,3 +1,5 @@
+//Is this file even being used?
+
 /** FME Server connection object, with support for WebSockets
  * @this FMEServer
  * @constructor
