@@ -1,7 +1,5 @@
-/* Credit given to http://blog.safe.com/2014/03/twitter-stream-api-map/ for the CSS 
-
-
-/*html, body {
+/* Credit given to http://blog.safe.com/2014/03/twitter-stream-api-map/ for the CSS  */
+html, body {
   color: white;
   height: 100%;
   width: 100%;
@@ -9,32 +7,16 @@
   margin: 0px;
   border: none;
 }
-*/
-html{
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 90px
-}
-
-
-/*a { color: #5EA9DD !important; }*/
 
 div#title{
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #ffffff;
 }
-
-/*path { stroke: rgba(94, 169, 221, 0.5) !important }*/
-
 /* make container, and thus map, 100% width */
 .container {
   width: auto;
   max-width: 2500px;
-  height: 1000px;
+  height: 500px;
 }
 .title-seperator hr{
   margin-top: 0px;
@@ -80,110 +62,3 @@ div#map_canvas{
   display: block;
   height: auto;
 }
-div#gauge{
-  display: block;
-  height: auto;
-}
-/*
-#tweets{
-  position: absolute;
-  top: 60px;
-  left: 75px;
-  z-index:1000;
-  font-size: 30px;
-}
-#search{
-  position: relative;
-  z-index: 2;
-  left: 62px;
-  top: 54px;
-}
-.iframe{
-  padding-top:0px;
-}
-.twitterinput {
-  background-color: #5EA9DD;
-}
-.usertext{
-  word-wrap: break-word;
-}
-*/
-
-/*layout responsive*/
-@media (min-width: 992px){
-  div#marker-note-group {
-      padding-top: 50px;
-  }
-  .marker-note{
-    margin-bottom: 30px
-  }
-}
-@media (max-width: 991px){
-  .marker-note{
-    margin-bottom: 0px;
-    display: block;
-  }
-  .side-area{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px
-  }
-  div#hint{
-    padding-left: 0px;
-  }
-}
-/*title size responsive*/
-@media (max-width: 600px) and (min-width: 500px){
-  h1 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 499px){
-  h1 {
-    font-size: 26px;
-  }
-}
-
-/*map height responsive*/
-@media (max-height: 300px){
-  div#map-canvas{
-    min-height: 250px;
-  }
-}
-@media (min-height: 301px) and (max-height: 400px){
-  div#map-canvas{
-    min-height: 280px;
-  }
-}
-@media (min-height: 401px) and (max-height: 500px){
-  div#map-canvas{
-    min-height: 350px;
-  }
-}
-@media (min-height: 501px) and (max-height: 600px){
-  div#map-canvas{
-    min-height: 450px;
-  }
-}
-@media (min-height: 601px) and (max-width: 550px){
-  div#map-canvas{
-    min-height: 350px;
-  }
-}
-@media (min-height: 601px) and (min-width: 551px){
-  div#map-canvas{
-    min-height: 550px;
-  }
-}
-/*
-.go {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.gobutton {
-  width: 100%;
-  background-color: #5EA9DD;
-  border-color: #66B8FF;
-}
-*/
