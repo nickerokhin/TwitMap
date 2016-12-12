@@ -5,7 +5,7 @@ var twitter = require('twitter'),
     http = require('http'),
     server = http.createServer(app),
     io = require('socket.io').listen(server);
-    mongodb = require('mongodb'),
+    //mongodb = require('mongodb'),
     sentiment = require('sentiment')
 
 //Setup twitter stream api
@@ -33,8 +33,8 @@ var streamParameters = {
 
 }
 
-var MongoClient = mongodb.MongoClient;
-var dbUrl = 'mongodb://localhost:27017/tweets';
+//var MongoClient = mongodb.MongoClient;
+//var dbUrl = 'mongodb://localhost:27017/tweets';
 
 // 'locations':'-180,-90,180,90'
 
@@ -93,9 +93,9 @@ io.sockets.on('connection', function (socket) {
                 }
 
 
-                else if(data.place != null){
-                  centerLat = data.place.bounding_box.coordinates[0][1][0];
-                  centerLng = data.place.bounding_box.coordinates[0][1][1];
+                  else if(data.place != null){
+                    centerLat = data.place.bounding_box.coordinates[0][1][0];
+                    centerLng = data.place.bounding_box.coordinates[0][1][1];
                     var outputPoint = {"lat": centerLat,"lng": centerLng};
                     socket.broadcast.emit("twitter-stream", outputPoint);
                     socket.emit('sent_stream', sentcount)
@@ -110,6 +110,7 @@ io.sockets.on('connection', function (socket) {
                   else if(data.text != null){
                     var tweet = data.text;
                   }
+                  /*
                   mongodb.connect(dbUrl, function(err,db){
                     if(err){
                       console.log(err)
@@ -123,9 +124,9 @@ io.sockets.on('connection', function (socket) {
                       });
                     }
                     });
-
+                    */
                   }
-
+                
 
 
               stream.on('limit', function(limitMessage) {
