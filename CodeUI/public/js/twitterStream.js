@@ -72,9 +72,7 @@ function initialize() {
     // say the connection was successful.
     socket.on("connected", function(r) {
 
-    socket.on("pressed", function(r){
     socket.emit("start tweets");
-    });
     //Now that we are connected to the server let's tell
     //the server we are ready to start receiving tweets.
     });
