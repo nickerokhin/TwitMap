@@ -1,8 +1,4 @@
-function initTweets(){
 
-  var socket = io.connect('/');
-  socket.emit("pressed");
-}
 
 function initialize() {
   //Setup Google Map
