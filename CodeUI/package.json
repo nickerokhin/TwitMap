@@ -1,0 +1,16 @@
+{
+  "name": "TwitMap",
+  "version": "1.0.0",
+  "author": "NickOsterfelt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "twitter": "*",
+    "socket.io": "*",
+    "sentiment": "*",
+    "request": "*"
+  }
+}

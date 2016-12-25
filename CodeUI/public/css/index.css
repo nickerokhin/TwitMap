@@ -1,0 +1,64 @@
+/* Credit given to http://blog.safe.com/2014/03/twitter-stream-api-map/ for the CSS  */
+html, body {
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+div#title{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* make container, and thus map, 100% width */
+.container {
+  width: auto;
+  max-width: 2500px;
+  height: 500px;
+}
+.title-seperator hr{
+  margin-top: 0px;
+}
+.warning{
+  color: #e3321a;
+  font-weight: bold;
+}
+.row{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pull-left{
+  padding-left: 0;
+}
+
+.pull-right{
+  padding-right: 0;
+}
+
+.btn{
+  width: 80px;
+  height: auto;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: 30px;
+  color: #ffffff;
+  background-color: #3c3c3c;
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: inherit;
+    transition: .3s;
+}
+div#map-container{
+  margin-top: 10px;
+}
+div#map_canvas{
+  display: block;
+  height: auto;
+}
